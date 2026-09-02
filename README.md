@@ -7,7 +7,7 @@ marketplaces. I train the models, build the services that serve them, and own bo
   and operating production ML on top of them
 - 🧠 Recent work: BERT-based query understanding, XGBoost/PyTorch ranking models, Elasticsearch
   relevance, and a search orchestration layer serving three production consumers
-- 🧪 Currently exploring agentic search — LangGraph, MCP tool-calling, and what it actually takes
+- 🧪 Currently exploring [agentic search](https://github.com/judasprabin/project-writeups/blob/main/agentic-car-search.md) — LangGraph, MCP tool-calling, and what it actually takes
   to get an LLM system from demo to production-grade
 - 🌱 Building a few things on my own time under [Karki Labs](https://github.com/judasprabin) —
   see pinned repos below
@@ -20,11 +20,14 @@ marketplaces. I train the models, build the services that serve them, and own bo
 
 #### What I've shipped
 
-- **Query understanding** — fine-tuned BERT for natural-language search, lifting query conversion
+Full write-ups — architecture, decisions, trade-offs — in [project-writeups](https://github.com/judasprabin/project-writeups):
+
+- **[Query understanding](https://github.com/judasprabin/project-writeups/blob/main/bert-query-understanding.md)** — fine-tuned BERT for natural-language search, lifting query conversion
   63.1% → 80.7% in production
-- **Ranking** — rebuilt a marketplace's listing-ranking system with XGBoost and PyTorch models,
-  moving scoring from a nightly batch job to an intra-day service
-- **Search platform** — principal author of a unified search service now serving three
+- **[Ranking](https://github.com/judasprabin/project-writeups/blob/main/ranking-models.md)** — rebuilt a marketplace's listing-ranking system with XGBoost and PyTorch models,
+  moving scoring from a nightly batch job to an intra-day service — including a self-audit that
+  caught target leakage in a shipped model
+- **[Search platform](https://github.com/judasprabin/project-writeups/blob/main/unisearch-orchestration.md)** — principal author of a unified search service now serving three
   production consumers, and core contributor to the underlying Elasticsearch engine
 
 #### Selected projects
